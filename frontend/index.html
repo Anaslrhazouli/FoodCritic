@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./app.css">
+  <script src="https://kit.fontawesome.com/4472fdf59c.js" crossorigin="anonymous"></script>
+
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  
+  <script defer type="module" src="./app.js"></script>
+
+  <title>Food Critic</title>
+</head>
+<body class="bg-gray-900">
+  <header class="bg-gray-800 text-white px-4 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Food Critic</h1>
+    <div id="userGreeting" class="hidden"></div>
+    <nav class="flex space-x-4">
+      <button id="logoutBtn" class="px-3 py-2 rounded-lg bg-red-500 text-white hover:bg-red-700 duration-300">Logout</button>
+      <a href="addRestaurant.html" id="addRestaurantBtn" class="px-3 py-2 rounded-lg hover:bg-gray-700 duration-300">Add Restaurant</a>
+      <a href="authenticate.html" id="connectBtn" class="px-3 py-2 rounded-lg hover:bg-gray-700 duration-300">Connect</a>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-4 py-8"> 
+    <ul id="restaurantList" class=" text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+      <span ></span>
+     
+      <!-- Your restaurant list items will be dynamically added here -->
+    </ul>
+  </main>
+
+</body>
+</html>
